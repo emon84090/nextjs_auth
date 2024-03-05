@@ -32,7 +32,10 @@ const Signin = () => {
         body: JSON.stringify(information),
       };
 
-      const data = await fetch(`http://localhost:3000/api/user/login`, config);
+      const data = await fetch(
+        `https://nextjs-auth-zeta-nine.vercel.app/api/user/login`,
+        config
+      );
 
       const response = await data.json();
 
