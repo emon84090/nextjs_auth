@@ -26,7 +26,7 @@ export async function getUser(token) {
     const secret = new TextEncoder().encode(process.env.JWT_SECRET);
     const decoded = await jwtVerify(token, secret);
     const data = await fetch(
-      `${process.env.BASE_URL}/api/user/profile/details`,
+      `https://nextjs-auth-zeta-nine.vercel.app/api/user/profile/details`,
       {
         headers: { id: decoded?.payload?.id },
       }
