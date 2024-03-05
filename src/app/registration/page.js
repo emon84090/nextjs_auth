@@ -1,13 +1,12 @@
 import NormaLayout from "@/components/NormaLayout";
-
-import { cookies } from "next/headers";
+import Signup from "@/components/Signup";
 import React from "react";
 
-const page = async () => {
+const page = () => {
   return (
     <>
       <NormaLayout>
-        <p>page</p>
+        <Signup />
       </NormaLayout>
     </>
   );
