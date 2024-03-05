@@ -31,9 +31,11 @@ export async function getUser(token) {
         headers: { id: decoded?.payload?.id },
       }
     );
+    console.log(data);
     const response = await data.json();
     return response?.data;
   } catch (err) {
+    console.log(err);
     return null;
   }
 }
